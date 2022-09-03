@@ -1,0 +1,73 @@
+.form {
+    position: relative;
+    width: 90%;
+    @media (max-width:50em) {
+        width: 70%;
+        
+      }
+&__input {
+    background-color: transparent;
+    border: 1px solid $color-light-red;
+    border-radius: 50px;
+    font-size: 1.6rem;
+    padding: 1.5rem 3rem;
+    height: 5.5rem;
+    width: 100%;
+    font-family: inherit;
+    font-size: 1.6rem;
+    color: $color-gray-red;
+    &::placeholder {
+        color: $color-light-red;
+    }
+    &:focus, &:active {
+        outline: none;
+        box-shadow: 0px 0px 10px hsla(0, 36%, 70%, 0.5);
+        border-width: 2px;
+    }
+}
+&__icon {
+    &--error{
+        display: none;
+        position: absolute;
+        top: 15px;
+        right: 110px;
+    }
+}
+&__btn{
+    background-image: linear-gradient($lg-2);
+    border: none;
+    border-radius: 5rem;
+    padding: 1.5rem;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 5.5rem;
+    width: 10rem;
+    box-shadow: 2px 5px 10px hsla(0, 36%, 70%, 0.5);
+    transition: all .2s;
+   &:hover {
+    opacity: 0.6;
+   }
+}
+&__text{
+    font-size: 1.6rem;
+    display: none;
+    color: $color-dark-red;
+    margin-top: 1rem;
+    margin-left: 3rem;
+}}
+
+
+.error {
+    .form{
+        &__input {
+        border: 2px solid $color-dark-red;
+    }
+    &__icon--error {
+        display: block;
+    }
+    &__text {
+        display: block;
+    }}
+}

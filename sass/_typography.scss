@@ -1,0 +1,34 @@
+.heading {
+  font-size: 6.4rem;
+
+  text-transform: uppercase;
+  letter-spacing: 1.5rem;
+  line-height: 1;
+  margin-bottom: 3rem;
+  @media (max-width:60em) {
+    font-size: 5.4rem;
+    
+  }
+  &--1 {
+    font-weight: 600;
+    color: $color-gray-red;
+  }
+  & span {
+    color: $color-light-red;
+    font-weight: 300;
+  }
+}
+
+.card__text {
+  max-width: 45ch;
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin-bottom: 5rem;
+  color: $color-light-red;
+  @media (max-width:50em) {
+   padding: 0 5rem;
+   margin-bottom: 4rem;
+    
+  }
+}
+

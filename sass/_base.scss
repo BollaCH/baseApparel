@@ -1,0 +1,40 @@
+$color-light-red: hsl(0, 36%, 70%);
+$color-dark-red: hsl(0, 93%, 68%);
+$color-gray-red: hsl(0, 6%, 24%);
+
+$lg-1: 135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%);
+$lg-2: 135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%);
+
+$font-display: 16px;
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  @media (max-width:60em) {
+    font-size: 50%;
+    
+  }
+}
+
+body {
+  font-weight: 300;
+  line-height: 1.6;
+  font-family: "Josefin Sans", sans-serif;
+  background-image: url(../images/bg-pattern-desktop.svg),
+  linear-gradient($lg-1), linear-gradient($lg-2);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.container {
+  display: flex;
+   
+}
