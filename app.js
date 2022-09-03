@@ -1,5 +1,9 @@
 const btn = document.querySelector(".form__btn")
 const form = document.querySelector(".form")
+const mailInput = document.querySelector(".form__input")
+
+
+
 
 function formError() {
     if (form.checkValidity() == false) {
@@ -23,3 +27,10 @@ document.addEventListener('invalid', (function () {
       document.querySelector(".form").focus();
     };
   })(), true);
+
+
+form.addEventListener('submit', () => {
+    btn.disabled = true;
+    mailInput.disabled = true;
+    mailInput.value = "Thank you for subscribing.";
+  }  )
